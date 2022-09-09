@@ -83,4 +83,12 @@ argocd cluster add minikube
 
 ### Create Apps
 
-ブラウザで`https://localhost:8080`にアクセスすれば、いろいろできるようになってる。
+ブラウザで`https://localhost:8080`にアクセスすれば、いろいろできるようになってる。すごい。
+
+## 気になったこと
+
+データの保存先を指定していない。どこにデータがたまってるんだろう。プロダクション環境では絶対に指定したいはず。
+
+ArgoCDのバックアップ？みたいなのほしくない？パッと見てみると、`argocd export`, `argocd import`というコマンドがある。[Disaster Recovery](https://argo-cd.readthedocs.io/en/stable/operator-manual/disaster_recovery/)参照。
+
+クラスターのmetrixもほしいし、各podのmetrixもほしい、ほしくない？
